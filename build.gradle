@@ -23,8 +23,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT")
-    implementation("me.clip:placeholderapi:2.11.5")
+    compileOnly("org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT")
+    compileOnly("me.clip:placeholderapi:2.11.5")
 }
 
 def targetJavaVersion = 8
