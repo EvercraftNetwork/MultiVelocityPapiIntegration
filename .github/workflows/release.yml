@@ -6,7 +6,7 @@ on:
   # Will run on every push in the "main" branch
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
