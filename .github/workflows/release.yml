@@ -17,6 +17,10 @@ jobs:
     name: Setup Environment, Build JAR and Release Project
     runs-on: ubuntu-latest
     steps:
+      - name: Fix Permissions
+        id: fixpermsssion
+        run: "chmod +x gradlew"
+        shell: bash
       - name: Automatic Release
         uses: Fulminazzo/java-automatic-release@v1
         with:
