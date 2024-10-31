@@ -80,6 +80,9 @@ jobs:
           VERSION: ${{ steps.gatherinfo.outputs.VERSION }}
           FILES: ${{ steps.gatherinfo.outputs.FILES }}
           BUILD_TOOL: ${{ steps.getbuildtool.outputs.BUILD_TOOL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
         run: |-
           export VERSION=$VERSION
           export FILES=$FILES
